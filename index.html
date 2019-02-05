@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Viseven Task-4</title>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header-wrapper">
+      <h1 class="main-head">Shopping Cart — Make Purchases Now!</h1>
+      <form class="cart-open" action="cart.html">
+        <button class="cart-button" type="submit">
+          <img src="src/img/cart.png" alt="cart">
+          <span class="sum-price" id="summAll">$0</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <section class="main-item-list-wrapper">
+    <ul class="main-item-list">
+
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p class="visually-hidden">some text about</p>
+  </footer>
+
+  <script src="index.js"></script>
+
+  <template id="categoryTemplate">
+    <li class="main-item">
+      <a href="items.html?categoryHead=Toys&categoryPic=src/img/toys.png" class="main-item-href">
+        <div class="item-photo">
+          <img src="src/img/toys.png" id="categoryImg" alt="item-toys">
+        </div>
+        <h3 class="item-header" id="categoryTitle">Toys</h3>
+      </a>
+    </li>
+  </template>
+
+</body>
+</html>

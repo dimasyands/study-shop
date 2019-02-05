@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Viseven Task-4</title>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header-wrapper">
+      <form action="index.html" class="back-button">
+        <button type="submit">
+          <img src="src/img/backbutton.png" alt="back">
+        </button>
+      </form>
+      <h2 class="category-head">T-Shirts</h2>
+      <form class="cart-open" action="cart.html">
+        <button class="cart-button" type="submit">
+          <img src="src/img/cart.png" alt="cart">
+          <span class="sum-price" id="summAll">$0</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <section class="item-list-wrapper">
+    <ul class="category-item-list">
+
+    </ul>
+  </section>
+    <footer class="footer">
+    <p class="visually-hidden">some text about</p>
+  </footer>
+  <script src="index.js"></script>
+  <template id="productTemplate">
+    <li class="category-item">
+      <div class="item-photo">
+        <img class="item-photo-src" src="src/img/t_shirt1.png" alt="item-tshirts">
+      </div>
+      <div class="item-text">
+        <h3 class="item-header">Green-Xtreame</h3>
+        <span class="item-price">$250</span>
+      </div>
+      <form class="item-amount">
+        <button class="minus-amount" type="button">-</button>
+        <div class="amount-text">
+          <p>amount</p>
+          <span id="amount">0</span>
+        </div>
+        <button class="plus-amount" type="button">+</button>
+      </form>
+    </li>
+  </template>
+</body>
+</html>
